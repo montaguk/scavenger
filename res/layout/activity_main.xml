@@ -11,6 +11,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world" 
+        android:id="@+id/textbox_location"/>
+
+    <Button
+        android:id="@+id/button_mark"
+        android:onClick="onMarkButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textbox_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/btn_mark_text" />
+
+    <ListView
+        android:id="@+id/fencelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_mark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" >
+    </ListView>
 
 </RelativeLayout>
